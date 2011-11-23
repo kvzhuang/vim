@@ -1,5 +1,9 @@
 filetype on
-filetype plugin on
+if &diff
+    filetype plugin off
+else
+    filetype plugin on
+endif
 
 set bs=2
 set cindent
@@ -54,7 +58,6 @@ set tenc=utf8
 " Set foldering.
 set foldmethod=syntax
 set foldnestmax=3
-set foldcolumn=1
 
 " Set tab settings.
 highlight TabLine ctermbg=blue
@@ -95,6 +98,7 @@ autocmd BufNewFile *.html so ~/.vim/html.txt
 autocmd BufNewFile *.html exe "1," . 10 . "g/name=\"created\" content=\".*\"/s//name=\"created\" content=\"" .strftime("%Y-%m-%d"). "\""
 autocmd BufWritePre,FileWritePre *.html exe "1," . 10 . "g/name=\"modified\" content=\".*\"/s//name=\"modified\" content=\"" .strftime("%c"). "\""
 
+
 " TagList plugin.
 let Tlist_Auto_Open = 0
 let Tlist_Show_One_File = 1
@@ -109,3 +113,4 @@ let g:tagbar_width = 30
 inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-K> :call PhpDocSingle()<CR>
 vnoremap <C-K> :call PhpDocRange()<CR>
+
