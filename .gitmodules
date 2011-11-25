@@ -25,9 +25,6 @@
 [submodule "bundle/nerdcommenter"]
     path = bundle/nerdcommenter
     url = git://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/jslint"]
-    path = bundle/jslint
-    url = git://github.com/hallettj/jslint.vim.git
 [submodule "bundle/oop-javascript-indentation"]
     path = bundle/oop-javascript-indentation
     url = git://github.com/vim-scripts/OOP-javascript-indentation.git
@@ -41,5 +38,5 @@
         path = bundle/tagbar
         url = git://github.com/majutsushi/tagbar.git
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
+        path = bundle/nerdtree
+        url = git://github.com/scrooloose/nerdtree.git
