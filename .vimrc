@@ -114,3 +114,6 @@ inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
 nnoremap <C-K> :call PhpDocSingle()<CR>
 vnoremap <C-K> :call PhpDocRange()<CR>
 
+" Command-T plugin.
+let g:CommandTMaxHeight = 15
+map t :CommandT<CR>
