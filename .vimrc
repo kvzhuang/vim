@@ -72,6 +72,7 @@ map <silent> <F4> :TlistToggle<CR>
 map <F5> <Esc>:EnableFastPHPFolds<Cr>
 map <F6> <Esc>:EnablePHPFolds<Cr>
 map <F7> <Esc>:DisablePHPFolds<Cr>
+map <buffer><silent> <F4> :w<CR>:make %<CR>:cw<CR>
 
 " Activate pathogen.vim
 call pathogen#runtime_append_all_bundles()
@@ -117,3 +118,6 @@ vnoremap <C-K> :call PhpDocRange()<CR>
 " Command-T plugin.
 let g:CommandTMaxHeight = 15
 map t :CommandT<CR>
+
+" SuperTab plugin.
+let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
