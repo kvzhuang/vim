@@ -72,7 +72,7 @@ map <silent> <F4> :TlistToggle<CR>
 map <F5> <Esc>:EnableFastPHPFolds<Cr>
 map <F6> <Esc>:EnablePHPFolds<Cr>
 map <F7> <Esc>:DisablePHPFolds<Cr>
-map <buffer><silent> <F4> :w<CR>:make %<CR>:cw<CR>
+map <buffer><silent> <F8> :w<CR>:make %<CR>:cw<CR>
 
 " Activate pathogen.vim
 call pathogen#runtime_append_all_bundles()
@@ -80,6 +80,10 @@ call pathogen#helptags()
 
 " Activate scss.vim
 au BufRead,BufNewFile *.scss set filetype=scss
+
+" Activate actionscript.vim
+au BufRead,BufNewFile *.as set filetype=actionscript
+
 " Removing tailing spaces.
 au! BufWrite * mark ' | silent! %s/\s\+$// | norm ''
 " Replace tab to spaces.
