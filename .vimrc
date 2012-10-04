@@ -14,15 +14,19 @@ set number
 set runtimepath=~/.vim,$VIMRUNTIME
 set title
 set wildmenu
+set paste
 
 " Highlight search keywords.
 set hlsearch
 set incsearch
 
+"set backspace
+
 " Replace tab with 4 spaces.
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+set ts=4
 
 " Auto-complete using Ctrl+K.
 set dictionary-=~/.vim/funclist.txt
@@ -46,8 +50,8 @@ highlight StatusLine term=bold,reverse cterm=bold,reverse
 " Set cursor line.
 set cursorline
 highlight CursorLine cterm=none ctermbg=4
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"match OverLength /\%81v.\+/
 
 " Always use utf-8 encoding.
 set fileencoding=utf-8
@@ -73,7 +77,17 @@ map <F5> <Esc>:EnableFastPHPFolds<Cr>
 map <F6> <Esc>:EnablePHPFolds<Cr>
 map <F7> <Esc>:DisablePHPFolds<Cr>
 map <buffer><silent> <F8> :w<CR>:make %<CR>:cw<CR>
+map <BS> i<BS><ESC>l
+"inoremap  <Up>     <NOP>
+"inoremap  <Down>   <NOP>
+"inoremap  <Left>   <NOP>
+"inoremap  <Right>  <NOP>
+"nnoremap   <Up>     <NOP>
+"nnoremap   <Down>   <NOP>
+"nnoremap   <Left>   <NOP>
+"nnoremap   <Right>  <NOP>
 
+nnoremap <F9> :TlistToggle<CR>
 " Activate pathogen.vim
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
@@ -125,3 +139,6 @@ map t :CommandT<CR>
 
 " SuperTab plugin.
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+let g:tlist_javascript_settings = 'javascript;s:string;a:array;o:object;f:function;m:member'
+
