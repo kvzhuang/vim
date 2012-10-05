@@ -4,7 +4,7 @@
 " [--nomen] [--on] [--passfail] [--plusplus] [--properties] [--regexp]
 " [--rhino] [--undef] [--unparam] [--sloppy] [--stupid] [--sub] [--vars]
 " [--white] [--widget] [--windows] [--json] [--color] [--terse] [--]
-setlocal makeprg=/usr/local/lib/node_modules/jslint/bin/jslint.js\ --continue\ --nomen\ --regexp\ --sloppy\ %
+setlocal makeprg=/usr/bin/jslint\ --continue\ --nomen\ --regexp\ --sloppy\ %
 set errorformat=%-P%f,
                 \%E%>\ #%n\ %m,%Z%.%#Line\ %l\\,\ Pos\ %c,
                 \%-G%f\ is\ OK.,%-Q
