@@ -125,3 +125,7 @@ map t :CommandT<CR>
 
 " SuperTab plugin.
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
+
+" Ctrlp Plugin
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
