@@ -55,3 +55,6 @@
 [submodule "bundle/jshint"]
 	path = bundle/jshint
 	url = git://github.com/walm/jshint.vim.git
+[submodule "ctrlp"]
+	path = ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
