@@ -41,20 +41,23 @@
         path = bundle/nerdtree
         url = git://github.com/scrooloose/nerdtree.git
 [submodule "bundle/snipmate"]
-	path = bundle/snipmate
-	url = git://github.com/msanders/snipmate.vim.git
+        path = bundle/snipmate
+        url = git://github.com/msanders/snipmate.vim.git
 [submodule "bundle/gist"]
-	path = bundle/gist
-	url = git://github.com/mattn/gist-vim.git
+        path = bundle/gist
+        url = git://github.com/mattn/gist-vim.git
 [submodule "bundle/actionscript-syntax"]
-	path = bundle/actionscript-syntax
-	url = git://github.com/vim-scripts/actionscript.vim--Leider.git
+        path = bundle/actionscript-syntax
+        url = git://github.com/vim-scripts/actionscript.vim--Leider.git
 [submodule "bundle/fugitive"]
-	path = bundle/fugitive
-	url = git://github.com/tpope/vim-fugitive.git
+        path = bundle/fugitive
+        url = git://github.com/tpope/vim-fugitive.git
+[submodule "bundle/coffee-script"]
+        path = bundle/coffee-script
+        url = git://github.com/kchmck/vim-coffee-script.git
 [submodule "bundle/jshint"]
-	path = bundle/jshint
-	url = git://github.com/walm/jshint.vim.git
+        path = bundle/jshint
+        url = git://github.com/walm/jshint.vim.git
 [submodule "ctrlp"]
-	path = ctrlp
-	url = git://github.com/kien/ctrlp.vim.git
+        path = ctrlp
+        url = git://github.com/kien/ctrlp.vim.git
