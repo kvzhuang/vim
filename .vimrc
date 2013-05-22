@@ -46,8 +46,9 @@ highlight StatusLine term=bold,reverse cterm=bold,reverse
 " Set cursor line.
 set cursorline
 highlight CursorLine cterm=none ctermbg=4
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+let &colorcolumn=join(range(81,999),",")
+highlight ColorColumn ctermbg=235 guibg=#2c2d27
+let &colorcolumn="80,".join(range(120,999),",")
 
 " Always use utf-8 encoding.
 set fileencoding=utf-8
