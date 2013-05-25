@@ -44,11 +44,11 @@ set statusline=%<%f\ %m%=\ %h%r\ %-19([%p%%]\ %3l,%02c%03V%)%y
 highlight StatusLine term=bold,reverse cterm=bold,reverse
 
 " Set cursor line.
-set cursorline
-highlight CursorLine cterm=none ctermbg=4
-let &colorcolumn=join(range(81,999),",")
-highlight ColorColumn ctermbg=235 guibg=#2c2d27
-let &colorcolumn="80,".join(range(120,999),",")
+" set cursorline
+"highlight CursorLine cterm=none ctermbg=4
+"let &colorcolumn=join(range(81,999),",")
+"highlight ColorColumn ctermbg=235 guibg=#2c2d27
+"let &colorcolumn="80,".join(range(120,999),",")
 
 " Always use utf-8 encoding.
 set fileencoding=utf-8
