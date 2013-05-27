@@ -14,6 +14,7 @@ set number
 set runtimepath=~/.vim,$VIMRUNTIME
 set title
 set wildmenu
+set paste
 
 " Highlight search keywords.
 set hlsearch
