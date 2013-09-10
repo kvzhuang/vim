@@ -98,7 +98,7 @@ autocmd BufReadPost *
 " Make vim setting works immediately.
 autocmd! BufWritePost .vimrc source %
 " Output CSS files once *.scss saves.
-autocmd BufWritePost *.scss !compass_lite <afile> <afile>:r.css
+autocmd BufWritePost *.scss !~/compass_lite <afile> <afile>:r.css
 
 " Create a template file.
 autocmd BufNewFile *.html so ~/.vim/html.txt
