@@ -15,7 +15,7 @@ set runtimepath=~/.vim,$VIMRUNTIME
 set title
 set wildmenu
 set paste
-
+set ff=unix
 " Highlight search keywords.
 set hlsearch
 set incsearch
@@ -75,7 +75,7 @@ map <F5> <Esc>:EnableFastPHPFolds<Cr>
 map <F6> <Esc>:EnablePHPFolds<Cr>
 map <F7> <Esc>:DisablePHPFolds<Cr>
 map <buffer><silent> <F8> :w<CR>:make %<CR>:cw<CR>
-
+nmap a i
 " Activate pathogen.vim
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
