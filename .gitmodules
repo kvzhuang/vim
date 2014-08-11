@@ -49,9 +49,6 @@
 [submodule "bundle/actionscript-syntax"]
         path = bundle/actionscript-syntax
         url = git://github.com/vim-scripts/actionscript.vim--Leider.git
-[submodule "bundle/fugitive"]
-        path = bundle/fugitive
-        url = git://github.com/tpope/vim-fugitive.git
 [submodule "bundle/coffee-script"]
         path = bundle/coffee-script
         url = git://github.com/kchmck/vim-coffee-script.git
