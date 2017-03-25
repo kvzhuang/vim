@@ -16,7 +16,7 @@ set title
 set wildmenu
 set paste
 set ff=unix
-
+set nofoldenable
 " Highlight search keywords.
 set hlsearch
 set incsearch
