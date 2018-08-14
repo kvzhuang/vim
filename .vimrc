@@ -113,6 +113,9 @@ autocmd BufReadPost *
 \ if line("'\"") > 0 && line ("'\"") <= line("$") |
 \   exe "normal g'\"" |
 \ endif
+
+au FileType gitcommit
+ \ hi gitcommitSummary ctermfg=yellow ctermbg=red
 " Make vim setting works immediately.
 autocmd! BufWritePost .vimrc source %
 " Output CSS files once *.scss saves.

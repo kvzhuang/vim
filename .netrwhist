@@ -1,7 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/home/kevin_zhuang/miiicasa'
-let g:netrw_dirhist_2='/home/kevin_zhuang/.vim'
-let g:netrw_dirhist_3='/home/kevin_zhuang/.ssh'
-let g:netrw_dirhist_4='/Users/kevin.zhuang/.config/.vim/.vim'
-let g:netrw_dirhist_5='/Users/kevin.zhuang/.config/configstore'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/kevin/.config/.vim/.vim'
+let g:netrw_dirhist_2='/Users/kevin/.config/.vim'
+let g:netrw_dirhist_3='/Users/kevin/.config/configstore'
